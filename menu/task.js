@@ -11,16 +11,17 @@ for (let item of menu) {
                 par1.className = "menu menu_sub"
             } else {
                 // если нажать на другое меню при уже открытом то прошлое закроется
-                let count_open_menu = document.getElementsByClassName("menu menu_sub menu_active")
-                if (count_open_menu.length == 1) {
-                    for (i of count_open_menu) {
+                let countOpenMenu = document.getElementsByClassName("menu menu_sub menu_active")
+                if (countOpenMenu.length == 1) {
+                    for (i of countOpenMenu) {
                         i.className = "menu menu_sub"
                     }
                 }
                 // открыть меню на которое нажали
                 par1.className = "menu menu_sub menu_active"
-                return false    // выкл переход по ссылке\
+                    // выкл переход по ссылке\
             }
+            return false
         }   
     }
 
