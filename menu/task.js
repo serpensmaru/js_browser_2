@@ -1,4 +1,4 @@
-const menu = document.querySelectorAll(".menu__link") // все ссылки
+ const menu = document.querySelectorAll(".menu__link") // все ссылки
 
 for (let item of menu) {
     let par1 = item.closest(".menu_sub") // если у ссалыки найдется родитель с классом вложенности
